@@ -1,190 +1,256 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway");
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: "Raleway", sans-serif;
-  color: #f2f2f2;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans',sans-serif;
 }
 
-#container-login {
-  background-color: #1d1f20;
-  position: relative;
-  top: 20%;
-  margin: auto;
-  width: 340px;
-  height: 445px;
-  border-radius: 0.35em;
-  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
-  text-align: center;
+.wrapper {
+    width: 1100px;
+    margin: auto;
+    position: relative;
 }
 
-#container-register {
-  background-color: #1d1f20;
-  position: relative;
-  top: 20%;
-  margin: auto;
-  width: 340px;
-  height: 480px;
-  border-radius: 0.35em;
-  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
-  text-align: center;
+.logo a {
+    font-size: 50px;
+    font-weight: 800;
+    float: left;
+    font-family: courier;
+    color: #364f6b;
 }
 
-#title {
-  position: relative;
-  background-color: #1a1c1d;
-  width: 100%;
-  padding: 20px 0px;
-  border-radius: 0.35em;
-  font-size: 22px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+.menu {
+    float: right;
 }
 
-.lock {
-  position: relative;
-  top: 2px;
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky; 
+    top: 0;
+    background: #FFFFFF;
+    z-index: 1;
+    border-bottom:1px solid #364f6b;
 }
 
-.input {
-  margin: auto;
-  width: 240px;
-  border-radius: 4px;
-  background-color: #373b3d;
-  padding: 8px 0px;
-  margin-top: 15px;
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
-.input-addon {
-  float: left;
-  background-color: #373b3d;
-  border: 1px solid #373b3d;
-  padding: 4px 8px;
-  border-right: 1px solid rgba(255, 255, 255, 0.05);
+nav ul li {
+    float: left;
 }
 
-input[type="checkbox"] {
-  cursor: pointer;
+nav ul li a {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
 }
 
-input[type="text"] {
-  color: #949494;
-  margin: 0;
-  background-color: #373b3d;
-  border: 1px solid #373b3d;
-  padding: 6px 0px;
-  border-radius: 3px;
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
-input[type="text"]:focus {
-  border: 1px solid #373b3d;
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
 }
 
-input[type="password"] {
-  color: #949494;
-  margin: 0;
-  background-color: #373b3d;
-  border: 1px solid #373b3d;
-  padding: 6px 0px;
-  border-radius: 3px;
+.kolom {
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-input[type="password"]:focus {
-  border: 1px solid #373b3d;
+.kolom .deskripsi {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'comic sans ms';
+    color: #364f6b;
 }
 
-input[type="email"] {
-  color: #949494;
-  margin: 0;
-  background-color: #373b3d;
-  border: 1px solid #373b3d;
-  padding: 6px 0px;
-  border-radius: 3px;
+h2 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #364f6b;
+    width: 100%;
+    line-height: 50px;
 }
 
-input[type="email"]:focus {
-  border: 1px solid #373b3d;
+a.tbl-biru {
+    background: #3f72af;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
 }
 
-.forgot-password {
-  position: relative;
-  bottom: 0%;
+a.tbl-biru:hover {
+    background: #fc5185;
+    text-decoration: none;
 }
 
-.forgot-password a:link {
-  color: #c1c3c6;
-  text-decoration: none;
+a.tbl-pink {
+    background: #fc5185;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
 }
 
-.forgot-password a:visited {
-  color: #c1c3c6;
-  text-decoration: none;
+a.tbl-pink:hover {
+    background: #3f72af;
+    text-decoration: none;
 }
 
-.forgot-password a:hover {
-  color: #fff;
-  transition: color 1s;
+p {
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
 }
 
-.privacy {
-  margin-top: 5px;
-  position: relative;
-  font-size: 12px;
-  bottom: 0%;
+.tengah {
+    text-align: center;
+    width: 100%;
 }
 
-.privacy a:link {
-  color: #949494;
-  text-decoration: none;
+.tutor-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.privacy a:visited {
-  color: #949494;
-  text-decoration: none;
+.kartu-tutor {
+    width: 20%;
+    margin: 0 auto;
 }
 
-.privacy a:hover {
-  color: #c1c3c6;
-  transition: color 1s;
+.kartu-tutor img {
+    width: 80%;
+    border-radius: 50%;
 }
 
-*:focus {
-  outline: none;
+.kartu-tutor p {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 25px;
+    text-align: center;
+    color: #364f6b;
 }
 
-.remember-me {
-  margin: 10px 0;
+.partner-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-input[type="submit"] {
-  padding: 6px 25px;
-  background: #373e4a;
-  color: #c1c3c6;
-  font-weight: bold;
-  border: 0 none;
-  cursor: pointer;
-  border-radius: 3px;
+.kartu-partner {
+    width: 20%;
+    margin: 0 auto;
 }
 
-.register {
-  margin: auto;
-  padding: 16px 0;
-  text-align: center;
-  margin-top: 40px;
-  width: 85%;
-  border-top: 1px solid #c1c3c6;
+.kartu-partner img {
+    width: 150px;
+    border-radius: 50%;
 }
 
-.clearfix {
-  clear: both;
+#contact {
+    background: #dedede;
+    padding:50px 0px 50px 0px;
 }
 
-#register-link {
-  margin-top: 10px;
-  padding: 6px 25px;
-  background: #373e4a;
-  color: #c1c3c6;
-  font-weight: bold;
-  border: 0 none;
-  cursor: pointer;
-  border-radius: 3px;
+.footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.footer-section {
+    width: 20%;
+    margin: 0 auto;
+}
+
+h3 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #364f6b;
+    width: 100%;
+    line-height: 50px;
+}
+
+#copyright {
+    text-align: center;
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 991.98px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    .logo a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .menu {
+        width: 100%;
+        margin: 0;
+    }
+
+    nav .menu ul {
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+    }
+
+    nav .menu ul li {
+        display: inline-block;
+        float: none;
+    }
+
+    section {
+        display: block;
+    }
+
+    section img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .kartu-tutor {
+        width: 50%;
+    }
+
+    .kartu-partner {
+        width: 50%;
+    }
 }
